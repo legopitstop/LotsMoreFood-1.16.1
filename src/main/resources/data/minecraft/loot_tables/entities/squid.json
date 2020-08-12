@@ -21,21 +21,9 @@
                 "min": 1.0,
                 "max": 3.0
               }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:50}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {"translate": "item.morefood:raw_squid"}
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [{"translate": "lore.lps:food"}]
             }
           ],
-          "name": "minecraft:cod"
+          "name": "morefood:raw_squid"
         }
       ]
     },

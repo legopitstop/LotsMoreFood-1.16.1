@@ -13,7 +13,7 @@ public class Apple extends Item {
         .group(MoreFood.TAB)
         .food(new Food.Builder()
                 .hunger(4)
-                .saturation(1.2f)
+                .saturation(0.3f)
                 .build())
 
         );

@@ -10,9 +10,11 @@ public class CookedChicken extends Item {
         super(new Properties()
         .group(MoreFood.TAB)
         .food(new Food.Builder()
-                .hunger(4)
-                .saturation(1.2f)
+                .meat()
+                .hunger(6)
+                .saturation(0.6f)
                 .build())
+                //.effect(new EffectInstance(Effects.HUNGER, 600, 0), 0.3F)
 
         );
 

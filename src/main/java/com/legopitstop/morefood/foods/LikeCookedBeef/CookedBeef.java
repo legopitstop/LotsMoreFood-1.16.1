@@ -10,8 +10,9 @@ public class CookedBeef extends Item {
         super(new Properties()
         .group(MoreFood.TAB)
         .food(new Food.Builder()
-                .hunger(4)
-                .saturation(1.2f)
+                .meat()
+                .hunger(8)
+                .saturation(0.8f)
                 .build())
 
         );

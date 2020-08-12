@@ -10,7 +10,7 @@ public class GoldenCarrot extends Item {
         super(new Properties()
         .group(MoreFood.TAB)
         .food(new Food.Builder()
-                .hunger(4)
+                .hunger(6)
                 .saturation(1.2f)
                 .build())
 

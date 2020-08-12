@@ -1,30 +1,20 @@
-package com.legopitstop.morefood.foods.LikeRabbitStew;
+package com.legopitstop.morefood.foods.LikeBeetrootSoup;
 
-import com.legopitstop.morefood.MoreFood;
+import com.legopitstop.morefood.init.MorefoodItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.item.UseAction;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.world.World;
 
-public class RabbitStew extends Item {
+public class CoconutMilk extends BeetrootSoup {
 
-    public RabbitStew() {
-        super(new Properties()
-                .maxStackSize(1)
-                .group(MoreFood.TAB)
-                .food(new Food.Builder()
-                        .hunger(10)
-                        .saturation(0.6F)
-                        .build())
-
-        );
-
-    }
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
         ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
-        return entityLiving instanceof PlayerEntity && ((PlayerEntity)entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(Items.BOWL);
+        return entityLiving instanceof PlayerEntity && ((PlayerEntity)entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(MorefoodItems.BOTTLE.get());
     }
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.DRINK;

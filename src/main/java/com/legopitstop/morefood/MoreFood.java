@@ -37,7 +37,8 @@ public class MoreFood
     // set attrubites to extoic trader
     private void setup(final FMLCommonSetupEvent event) {
         DeferredWorkQueue.runLater(()-> {
-            GlobalEntityTypeAttributes.put(MorefoodEntityTypes.EXOTIC_TRADER.get(), ExoticTraderEntity.setCustomAttributes().create());
+            // func_233813_a_ -> create
+            GlobalEntityTypeAttributes.put(MorefoodEntityTypes.EXOTIC_TRADER.get(), ExoticTraderEntity.setCustomAttributes().func_233813_a_());
         });
     }
 

@@ -12,10 +12,15 @@ public class NetheriteApple extends Item {
         super(new Properties()
         .group(MoreFood.TAB)
         .food(new Food.Builder()
-                .hunger(4)
-                .saturation(1.2f)
-                .effect(new EffectInstance(Effects.ABSORPTION, 2*60*20, 0),1)
-                .effect(new EffectInstance(Effects.REGENERATION, 5*20, 1),1)
+                .hunger(1)
+                .saturation(0.3f)
+                .setAlwaysEdible()
+
+                .effect(new EffectInstance(Effects.INSTANT_HEALTH, 1*20, 0), 1.0F)
+                .effect(new EffectInstance(Effects.RESISTANCE, 4*60*20, 0), 1.0F)
+                .effect(new EffectInstance(Effects.ABSORPTION, 4*60*20, 0), 1.0F)
+                .effect(new EffectInstance(Effects.HASTE, 4*60*20, 0), 1.0F)
+
                 .build())
 
         );

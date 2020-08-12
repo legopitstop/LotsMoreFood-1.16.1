@@ -8,11 +8,12 @@ public class MilkBucket extends Item {
 
     public MilkBucket() {
         super(new Properties()
-        .group(MoreFood.TAB)
-        .food(new Food.Builder()
-                .hunger(4)
-                .saturation(1.2f)
-                .build())
+                .maxStackSize(1)
+                .group(MoreFood.TAB)
+                .food(new Food.Builder()
+                        .hunger(4)
+                        .saturation(1.2f)
+                        .build())
 
         );
 

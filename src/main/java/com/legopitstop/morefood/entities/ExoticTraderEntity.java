@@ -33,8 +33,11 @@ public class ExoticTraderEntity extends AnimalEntity {
     //func_233666_p_ --> registerAttributes()
     public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
         return MobEntity.func_233666_p_()
-                .createMutableAttribute(Attributes.MAX_HEALTH,12.0D)
-                .createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.25D);
+                // field_233818_a_ -> MAX_HEALTH
+                // field_233821_d_ -> MOVEMENT_SPEED
+                // func_233814_a_ -> createMutableAttribute
+                .func_233814_a_(Attributes.field_233818_a_) //12.0D
+                .func_233814_a_(Attributes.field_233821_d_); //0.25D
     }
 
     // mob AI/GOALS
@@ -71,7 +74,8 @@ public class ExoticTraderEntity extends AnimalEntity {
 
     @Override
     protected void playStepSound(BlockPos pos, BlockState blockIn) {
-        this.playSound(SoundEvents.ENTITY_ZOGLIN_STEP, 0.15f, 1.0f);
+        // field_232855_rz_ -> ENTITY_ZOGLIN_STEP
+        this.playSound(SoundEvents.field_232855_rz_, 0.15f, 1.0f);
     }
 
     @Nullable

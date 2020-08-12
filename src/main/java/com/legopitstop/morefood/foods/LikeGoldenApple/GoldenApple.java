@@ -6,16 +6,18 @@ import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 
-public class BaconEggMuffin extends Item {
+public class GoldenApple extends Item {
 
-    public BaconEggMuffin() {
+    public GoldenApple() {
         super(new Properties()
         .group(MoreFood.TAB)
         .food(new Food.Builder()
-                .hunger(4)
-                .saturation(1.2f)
-                .effect(new EffectInstance(Effects.ABSORPTION, 2*60*20, 0),1)
-                .effect(new EffectInstance(Effects.REGENERATION, 5*20, 1),1)
+                .hunger(1)
+                .saturation(0.3f)
+                .setAlwaysEdible()
+
+                .effect(new EffectInstance(Effects.REGENERATION, 100, 1), 1.0F)
+                .effect(new EffectInstance(Effects.ABSORPTION, 2400, 0), 1.0F)
                 .build())
 
         );

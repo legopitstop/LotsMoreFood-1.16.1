@@ -10,11 +10,11 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 
 modId="morefood" #mandatory
 
-version="1.16.1-1.0.0" #mandatory
+version="1.0.1" #mandatory
 
 displayName="Lot's More Food" #mandatory
 
-updateJSONURL="http://myurl.me/" #optional
+updateJSONURL="https://github.com/legopitstop/ModUpdates/raw/master/LotsMoreFood/update.json" #optional
 
 displayURL="https://www.curseforge.com/members/legopitstop/projects" #optional
 
@@ -28,14 +28,14 @@ description='''
  This is a port from my datapack! Ever thought that Minecraft needed more food? Then this is your mod! This mod adds more than 50+ Foods. Use to replenish those health and hunger points. Make sure to download the resource pack too.
 '''
 
-[[dependencies.examplemod]] #optional
-    modId="forge" #mandatory
-    mandatory=true #mandatory
-    versionRange="[32,)" #mandatory
+[[dependencies.morefood]]
+    modId="forge"
+    mandatory=true
+    versionRange="[32,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.morefood]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.1]"
