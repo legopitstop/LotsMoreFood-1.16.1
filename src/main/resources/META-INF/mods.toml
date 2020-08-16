@@ -1,29 +1,19 @@
 modLoader="javafml" #mandatory
-
-loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
-
+loaderVersion="[32,)" #mandatory
 license="Legopitstop & Sir_Craftypants Common License"
-
-issueTrackerURL="http://my.issue.tracker/" #optional
+issueTrackerURL="http://my.issue.tracker/"
 
 [[mods]] #mandatory
-
 modId="morefood" #mandatory
 
 version="1.0.1" #mandatory
 
 displayName="Lot's More Food" #mandatory
-
-updateJSONURL="https://github.com/legopitstop/ModUpdates/raw/master/LotsMoreFood/update.json" #optional
-
-displayURL="https://www.curseforge.com/members/legopitstop/projects" #optional
-
-logoFile="pack.png" #optional
-
-credits="Now available for forge!" #optional
-
-authors="Legopitstop & Sir_Craftypants" #optional
-
+updateJSONURL="https://github.com/legopitstop/ModUpdates/raw/master/LotsMoreFood/update.json"
+displayURL="https://www.curseforge.com/members/legopitstop/projects"
+logoFile="pack.png"
+credits="Now available for forge!"
+authors="Legopitstop & Sir_Craftypants"
 description='''
  This is a port from my datapack! Ever thought that Minecraft needed more food? Then this is your mod! This mod adds more than 50+ Foods. Use to replenish those health and hunger points. Make sure to download the resource pack too.
 '''
